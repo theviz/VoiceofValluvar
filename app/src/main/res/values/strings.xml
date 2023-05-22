@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Voice of Valluvar</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_books">Books</string>
+    <string name="menu_people">People</string>
+    <string name="menu_videos">Videos</string>
+    <string name="profile">Profile</string>
+</resources>
