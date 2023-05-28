@@ -2,10 +2,15 @@ package com.example.voiceofvalluvar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -27,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                             switch (item.getItemId()) {
                                 case R.id.home:
                                     Log.v("V", "Home");
+                                    replaceFragment(new HomeFragment());
                                     return true;
                                 case R.id.books_tab:
                                     Log.v("V", "Books");
